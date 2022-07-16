@@ -2,6 +2,8 @@
 
 ![Design preview for the Product preview card component coding challenge](./design/desktop-preview.jpg)
 
+### VEJA COMO FICOU ESTE PROJETO AQUI -> https://thalyssonborges-frontendmentor-challenge01.netlify.app/
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
