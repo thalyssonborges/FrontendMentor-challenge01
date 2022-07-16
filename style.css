@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Montserrat:wght@500;700&display=swap');
+/*-  Fraunces: 700 and Montserrat: 500, 700  -*/
+
+:root{
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+    background-color: var(--cream);
+}
+
+.container{
+    max-width: 1440px;
+    margin: auto;
+    padding: 0px 30px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    display: flex;
+    width: 800px;
+    background-color: var(--white);
+    border-radius: 20px;
+}
+.image-area{
+    flex: 1;
+    background-image: url("images/image-product-desktop.jpg");
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.image-area img{
+    display: none;
+}
+.text-area{
+    flex: 1;
+    width: 100%;
+    height: 100%;
+}
+.text-area--container{
+    margin: 42px;
+}
+.text-area--category{
+    font-family: 'Montserrat' , sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    color: var(--very-dark-blue);
+}
+.text-area--title{
+    font-family: 'Fraunces' , sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 44px;
+    margin: 35px 0;
+}
+.text-area--text-content{
+    font-family: 'Montserrat' , sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--dark-grayish-blue);
+}
+.text-area--price-area{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.text-area--price-descont{
+    font-family: 'Fraunces' , sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    color: var(--dark-cyan);
+}
+.text-area--price{
+    margin-left: 30px;
+    text-decoration: line-through;
+    color: var(--dark-grayish-blue);
+    font-size: 18px;
+}
+.text-area--button{
+    padding: 20px 0;
+    margin-top: 30px;
+    cursor: pointer;
+    background-color: var(--dark-cyan);
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+.text-area--button:active{
+    background-color: hsl(158, 91%, 14%);
+}
+.text-area--button a{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    color: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--white);
+}
+.text-area--button-name{
+    margin-left: 10px;
+}
+
+
+@media(max-width:700px){
+    .container{
+
+    }
+    .content{
+        flex-direction: column;
+    }
+    .image-area{
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+    .image-area img{
+        display: block;
+        width: 100%;
+        background-position: bottom;
+        background-size: contain;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+    .text-area--container{
+        margin: 25px;
+    }
+    .text-area--category{
+        font-size: 10px;
+        letter-spacing: 4px;
+    }
+    .text-area--title{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-size: max(16px,7vw);
+        line-height: 30px;
+    }
+    .text-area--text-content{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .text-area--price-area{
+        margin-top: 40px;
+    }
+    .text-area--price-descont{
+        font-size: 28px;
+    }
+    .text-area--price{
+        font-size: 14px;
+        margin-left: 20px;
+
+    }
+    .text-area--button{
+        margin-top: 20px;
+    }
+    .text-area--button a{
+        font-size: 14px;
+    }
+}
+
+
+
+
+/* PALETA DE CORES */
+.paleta{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 20px;
+    border: 1px solid black;
+    display: flex;
+}
+.paleta-area{
+    display: flex;
+    align-items: center;
+}
+.paleta-area div{
+    font-size: 28px;
+}
+.paleta1{
+    background-color: var(--dark-cyan);
+}
+.paleta2{
+    background-color: var(--cream);
+}
+.paleta3{
+    background-color:var(--very-dark-blue);
+}
+.paleta4{
+    background-color: var(--dark-grayish-blue);
+}
+.paleta5{
+    background-color: var(--white);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+<div class="attribution">
+Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+Coded by <a href="#">Your Name Here</a>.
+</div>
